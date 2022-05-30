@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/yellow">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<!--    <ImageView-->
+<!--        android:layout_gravity="top"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:adjustViewBounds="true"-->
+<!--        android:src="@drawable/paw_print_no" />-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/hanalei_fill"
+            android:gravity="center"
+            android:text="Apollo's Quest!"
+            android:textColor="@color/red"
+            android:textSize="40dp" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="208dp"
+            android:layout_height="288dp"
+            android:layout_gravity="bottom|center"
+            android:adjustViewBounds="true"
+            android:src="@drawable/balloons" />
+
+        <EditText
+            android:id="@+id/edtFirstName"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/custom_button_trans"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:drawablePadding="10dp"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:textSize="14sp" />
+
+
+        <EditText
+            android:id="@+id/edtAge"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/custom_button_trans"
+            android:drawableLeft="@drawable/ic_baseline_filter_vintage_24"
+            android:drawablePadding="10dp"
+            android:hint="Age"
+            android:inputType="number"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/edtCondition"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/custom_button_trans"
+            android:drawableLeft="@drawable/ic_baseline_health_and_safety_24"
+            android:drawablePadding="10dp"
+            android:hint="Health Conditions"
+            android:inputType="textPersonName"
+            android:textSize="14sp" />
+
+
+        <Button
+            android:id="@+id/play"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/custom_button"
+            android:onClick="createAccount"
+            android:text="PLAY!"
+            android:textColor="@android:color/white"
+            app:backgroundTint="@color/red" />
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+
+    </ScrollView>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

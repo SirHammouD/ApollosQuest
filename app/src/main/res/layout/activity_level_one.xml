@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back_one">
+
+    <ImageButton
+        android:id="@+id/apple"
+        android:layout_width="134dp"
+        android:layout_height="135dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginEnd="44dp"
+        android:background="@drawable/apple"
+        app:layout_constraintEnd_toStartOf="@+id/carrot"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/carrot"
+        android:layout_width="86dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="148dp"
+        android:layout_marginEnd="208dp"
+        android:background="@drawable/carrot"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="76dp"
+        android:text="Which fruit is best for your eyesight?"
+        android:textColor="@color/red"
+        android:textSize="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/carrot"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
